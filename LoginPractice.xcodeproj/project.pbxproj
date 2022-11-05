@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F3F25B129138A4200B5A143 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3F25B029138A4200B5A143 /* ErrorHandler.swift */; };
+		8F3F25B329138C1F00B5A143 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3F25B229138C1F00B5A143 /* NetworkModel.swift */; };
+		8F3F25B5291390C000B5A143 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3F25B4291390C000B5A143 /* SignInViewModel.swift */; };
+		8F3F25B92913922500B5A143 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8F3F25B82913922500B5A143 /* RxCocoa */; };
+		8F3F25BB2913922500B5A143 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8F3F25BA2913922500B5A143 /* RxSwift */; };
+		8F43218829160E87003E524D /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43218729160E87003E524D /* LogInView.swift */; };
+		8F43218A29160EE7003E524D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43218929160EE7003E524D /* LogInViewController.swift */; };
 		8F50EFA429123B0300118F62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50EFA329123B0300118F62 /* AppDelegate.swift */; };
 		8F50EFA629123B0300118F62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50EFA529123B0300118F62 /* SceneDelegate.swift */; };
 		8F50EFA829123B0300118F62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50EFA729123B0300118F62 /* ViewController.swift */; };
@@ -25,6 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F3F25B029138A4200B5A143 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		8F3F25B229138C1F00B5A143 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		8F3F25B4291390C000B5A143 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		8F43218729160E87003E524D /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		8F43218929160EE7003E524D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		8F50EFA029123B0300118F62 /* LoginPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F50EFA329123B0300118F62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F50EFA529123B0300118F62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3F25B92913922500B5A143 /* RxCocoa in Frameworks */,
 				8F50EFC12912493400118F62 /* SnapKit in Frameworks */,
+				8F3F25BB2913922500B5A143 /* RxSwift in Frameworks */,
 				8F50EFCF291294E800118F62 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F43218629160E67003E524D /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				8F43218929160EE7003E524D /* LogInViewController.swift */,
+				8F43218729160E87003E524D /* LogInView.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
 		8F50EF9729123B0300118F62 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +103,7 @@
 				8F50EFC52912943B00118F62 /* Network */,
 				8F50EFBC29123B9600118F62 /* Utility */,
 				8F50EFB929123B4E00118F62 /* SignIn */,
+				8F43218629160E67003E524D /* LogIn */,
 				8F50EFA929123B0300118F62 /* Main.storyboard */,
 				8F50EFAC29123B0400118F62 /* Assets.xcassets */,
 				8F50EFAE29123B0400118F62 /* LaunchScreen.storyboard */,
@@ -92,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				8F50EFB729123B4900118F62 /* SignInViewController.swift */,
+				8F3F25B4291390C000B5A143 /* SignInViewModel.swift */,
 				8F50EFBA29123B7900118F62 /* SignInView.swift */,
 			);
 			path = SignIn;
@@ -118,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				8F50EFC62912944D00118F62 /* APIService.swift */,
+				8F3F25B029138A4200B5A143 /* ErrorHandler.swift */,
+				8F3F25B229138C1F00B5A143 /* NetworkModel.swift */,
 				8F50EFCA291294B600118F62 /* EndPoint.swift */,
 				8F50EFC8291294AA00118F62 /* APIKeys.swift */,
 			);
@@ -143,6 +170,8 @@
 			packageProductDependencies = (
 				8F50EFC02912493400118F62 /* SnapKit */,
 				8F50EFCE291294E800118F62 /* Alamofire */,
+				8F3F25B82913922500B5A143 /* RxCocoa */,
+				8F3F25BA2913922500B5A143 /* RxSwift */,
 			);
 			productName = LoginPractice;
 			productReference = 8F50EFA029123B0300118F62 /* LoginPractice.app */;
@@ -175,6 +204,7 @@
 			packageReferences = (
 				8F50EFBF2912493400118F62 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				8F50EFCD291294E800118F62 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8F3F25B72913922500B5A143 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 8F50EFA129123B0300118F62 /* Products */;
 			projectDirPath = "";
@@ -203,11 +233,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3F25B329138C1F00B5A143 /* NetworkModel.swift in Sources */,
 				8F50EFC42912912D00118F62 /* CustomTextField.swift in Sources */,
 				8F50EFB829123B4900118F62 /* SignInViewController.swift in Sources */,
 				8F50EFCB291294B600118F62 /* EndPoint.swift in Sources */,
+				8F3F25B5291390C000B5A143 /* SignInViewModel.swift in Sources */,
 				8F50EFBE29123BBB00118F62 /* BaseView.swift in Sources */,
+				8F3F25B129138A4200B5A143 /* ErrorHandler.swift in Sources */,
 				8F50EFC9291294AA00118F62 /* APIKeys.swift in Sources */,
+				8F43218A29160EE7003E524D /* LogInViewController.swift in Sources */,
+				8F43218829160E87003E524D /* LogInView.swift in Sources */,
 				8F50EFA829123B0300118F62 /* ViewController.swift in Sources */,
 				8F50EFA429123B0300118F62 /* AppDelegate.swift in Sources */,
 				8F50EFA629123B0300118F62 /* SceneDelegate.swift in Sources */,
@@ -440,6 +475,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8F3F25B72913922500B5A143 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		8F50EFBF2912493400118F62 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -459,6 +502,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8F3F25B82913922500B5A143 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F3F25B72913922500B5A143 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		8F3F25BA2913922500B5A143 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F3F25B72913922500B5A143 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		8F50EFC02912493400118F62 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8F50EFBF2912493400118F62 /* XCRemoteSwiftPackageReference "SnapKit" */;
